@@ -1,0 +1,460 @@
+<html>
+<head>
+<title>Blog</title>
+
+</head>
+<style type="text/css">
+
+
+
+html {
+    background: #e3e3e3;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.5em;
+
+    color: #000;
+
+    width: 100%;
+
+    
+
+}
+
+a { color: #333; }
+
+a:hover { color: #999; }
+
+
+#blogemo_background_section_middle {
+
+    width: 100%;
+    
+    background: #e3e3e3;
+    
+    clear: both;
+    
+    overflow:hidden;
+
+}
+
+#blogemo_background_section_bottom {
+
+    width: 100%;
+    
+    height: 327px;
+
+    background: #686160;
+    
+    float: left;
+
+}
+
+.blogemo_container {
+
+    width: 1000px;
+
+    margin: auto;
+
+}
+
+#blogemo_header {
+
+    width: 1000px;
+    height:100px;   
+    background: url(images/topImage.jpg) no-repeat;
+
+}
+
+
+
+#blogemo_menu_panel {
+    width:100%;
+    height: 53px;   
+    margin: 0 auto;
+    background: url(images/blogemo_menu_bg.jpg) repeat-x;
+    float:left;
+}
+
+
+
+#blogemo_menu_section ul {
+    float: left;
+    width: 930px;
+    margin: 0;
+    padding-top: 5px;
+    list-style: none;
+}
+
+#blogemo_menu_section ul li {
+    display: inline;
+}
+
+#blogemo_menu_section ul li a {
+    float: left;
+    width: 110px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#blogemo_menu_section li a:hover, #blogemo_menu_section li .current{
+    color: #fff;
+    height: 40px;
+    background:url(images/blogemo_menu_current.jpg) repeat-x;
+}
+
+
+#blogemo_left_section {
+    
+    width: 600px;
+    float: left;
+    margin: 10px 0px 10px 35px;
+    
+}
+
+* html #blogemo_left_section {
+
+    margin-left: 15px;
+}
+
+.blogemo_post {
+    
+    width: 600px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+
+
+.blogemo_post_top {
+    
+    width: 575px;
+    height: 35px;
+    font-size: 18px;
+    color:#fff;
+    font-weight:bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    background: #686160 no-repeat;
+
+}
+
+.blogemo_post_mid {
+    
+    width: 598px;
+    background: #fff  no-repeat top center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-top: 10px;
+
+}
+
+.blogemo_post_bottom {
+    
+    width: 598px;
+    height: 34px;
+    background: #686160 no-repeat bottom center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.blogemo_post_mid img {
+    
+    border: #ccc solid 1px;
+    float: left;
+    margin: 3px 15px 0 0;
+
+}
+
+.blogemo_post_mid p {
+    
+    font-size: 12px;
+    color: #000;
+    margin : 0px 25px 25px 25px;
+    text-align: justify;
+
+}
+
+.blogemo_post_top_yellow {
+    
+    width: 575px;
+    height: 35px;
+    background: #686160 no-repeat;
+    font-size: 18px;
+    color:#fff;
+    font-weight:bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    
+}
+
+span.post{
+    margin: 25px;
+    color: #666;
+    font-size: 11px;
+    
+}
+
+#blogemo_right_section {
+    
+    width: 310px;
+    float: right;
+    margin: 10px 30px 10px 0px;
+    
+}
+
+* html #blogemo_right_section {
+
+    margin-right: 15px;
+}
+
+.blogemo_section_box {
+    
+    width: 310px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.blogemo_section_box_top {
+    
+    width: 285px;
+    height: 35px;
+    background: #686160 no-repeat;
+    font-size: 18px;
+    color:#fff;
+    font-weight:bold;
+    padding: 15px 0 0 25px;
+
+}
+
+
+.blogemo_section_box_mid {
+    
+    width: 308px;
+    background:  #FFF no-repeat top center;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    padding-top: 25px;
+}
+
+
+.blogemo_section_box_mid p {
+    
+    font-size: 12px;
+    color:#000;
+    margin : 0px 25px 25px 25px;
+    text-align: justify;
+
+}
+
+.blogemo_section_box_mid p a {
+    
+    font-size: 12px;
+    color:#333;
+
+}
+
+.blogemo_section_box_mid p a:hover {
+    
+    font-size: 12px;
+    color:#999;
+
+}
+
+
+.blogemo_section_box_mid ul {
+    
+    margin-bottom:15px;
+    margin-top:0px;
+    padding-right:15px;
+    color: #333;
+}
+
+.blogemo_section_box_bottom {
+    
+    width: 308px;
+    height: 31px;
+    background: #686160 no-repeat bottom center #fff;
+    margin-top: -15px;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+
+}
+
+
+
+.blogemo_section_box_top_yellow {
+    
+    width: 285px;
+    height: 35px;
+    background: #686160 no-repeat;
+    font-size: 18px;
+    color:#fff;
+    font-weight:bold;
+    padding: 15px 0 0 25px;
+
+}
+
+
+</style>
+<body>
+	<section id="blogemo_background_section_top">
+    
+    	<section class="blogemo_container">
+		
+        	<section id="blogemo_header">
+				             
+         	</section>
+                
+    		<section id="blogemo_menu_panel">
+            
+    			<section id="blogemo_menu_section">
+                
+            		<ul>
+		                <li><a href="index.html"  class="current">Home</a></li>
+        		        <li><a href="#">Home2</a></li>
+		                <li><a href="#">Home3</a></li>
+		                <li><a href="#">Home4</a></li>  
+        		        <li><a href="#">Home5</a></li> 
+                		<li><a href="#">Home6</a></li>                     
+		            </ul> 
+                    
+				</section
+                
+		    </section> 
+            
+		</section>
+        
+	</section>
+    
+    <section id="blogemo_background_section_middle">
+    
+    	<section class="blogemo_container">
+        
+        	<section id="blogemo_left_section">
+            	
+                <section class="blogemo_post">
+                
+                	<section class="blogemo_post_top">
+                    	Title 1
+                    </section>
+                    <section class="blogemo_post_mid">
+                    	                        
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad </p>
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad </p>
+                      <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                       qwertykeypad qwertykeypad qwertykeypad</p>
+                        
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                         qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad </p>
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                         qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad</p>
+                      <section class="clear"></section>
+                        
+                    </section>
+                    <section class="blogemo_post_bottom">
+                    
+                    	                  </section>
+                    
+			  </section>
+                
+                <section class="blogemo_post">
+                
+                	<section class="blogemo_post_top_yellow">
+                    	Title 2
+                    </section>
+                    <section class="blogemo_post_mid">
+                    	
+                        <p>qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                         qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                      qwertykeypad qwertykeypad qwertykeypad qwertykeypad</p>
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                         qwertykeypad qwertykeypad</p>
+                        <p> qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad
+                         qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad</p>
+                      <section class="clear">             	        	
+                      </section>
+                        
+                    </section>
+                    <section class="blogemo_post_bottom">
+                    	                  </section>
+                    
+			  </section>
+                
+            </section>
+            
+            <section id="blogemo_right_section">
+            	
+                <section class="blogemo_section_box">
+                	<section class="blogemo_section_box_top_yellow">
+                    	Advertisements
+                    </section>
+					<section class="blogemo_section_box_mid">
+                   		
+						<img alt="Advertisement"  src="images/blogemo_ads.jpg" />
+                        <img alt="Advertisement"  src="images/blogemo_ads.jpg" />
+                        <img alt="Advertisement"  src="images/blogemo_ads.jpg" />
+                                           	
+                        
+                        <section class="clear">&nbsp;</section>
+					</section>
+                    <section class="blogemo_section_box_bottom"></section>
+                </section>
+                            
+                <section class="blogemo_section_box">
+                	<section class="blogemo_section_box_top">
+                    
+                    	Categories
+                        
+                    </section>
+					<section class="blogemo_section_box_mid">
+                   		
+						<ul>
+                        	<li><a href="#">Web</a></li>
+                            <li><a href="#">JavaScripts</a></li>
+                            <li><a href="#">CSS </a></li>
+                            <li><a href="#">bootstrap</a></li>
+                        </ul>                       
+                        
+					</section>
+                    <section class="blogemo_section_box_bottom"></section>
+                </section>
+                
+                <section class="blogemo_section_box">
+                	<section class="blogemo_section_box_top_yellow">
+                    	About This Blog
+                    </section>
+					<section class="blogemo_section_box_mid">
+                   		<p>about the blog.<br /><br />
+</p>
+<br /><br />
+
+                    </section>
+                    <section class="blogemo_section_box_bottom"></section>
+                </section>
+            </section>
+        </section>
+	</section>
+   
+
+</html>
