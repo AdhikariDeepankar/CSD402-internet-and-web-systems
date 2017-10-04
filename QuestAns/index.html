@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="ScriptsBundle">
+	<title>Quora Rebuilt</title>
+	<!-- =-=-=-=-=-=-= Favicons Icon =-=-=-=-=-=-= -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<!-- =-=-=-=-=-=-= Mobile Specific =-=-=-=-=-=-= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- =-=-=-=-=-=-= Bootstrap CSS Style =-=-=-=-=-=-= -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- =-=-=-=-=-=-= Template CSS Style =-=-=-=-=-=-= -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- =-=-=-=-=-=-= Font Awesome =-=-=-=-=-=-= -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- =-=-=-=-=-=-= Et Line Fonts =-=-=-=-=-=-= -->
+	<link rel="stylesheet" href="css/et-line-fonts.css">
+	<!-- =-=-=-=-=-=-= Google Fonts =-=-=-=-=-=-= -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+	<!-- =-=-=-=-=-=-= Owl carousel =-=-=-=-=-=-= -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.style.css">
+	<!-- =-=-=-=-=-=-= Highliter Css =-=-=-=-=-=-= -->
+	<link type="text/css" rel="stylesheet" href="css/styles/shCoreDefault.css" />
+    <!-- =-=-=-=-=-=-= Css Animation =-=-=-=-=-=-= -->
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css" />
+    <!-- =-=-=-=-=-=-= Hover Dropdown =-=-=-=-=-=-= -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
+	<!-- JavaScripts -->
+	<script src="js/modernizr.js"></script>
+	
+</head>
+
+
+<body>
+
+<div class="top-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
+				<ul class="top-nav nav-left">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li class="hidden-xs"><a href="blog.html">Blog</a>
+					</li>
+					<li  class="hidden-xs"><a href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-8">
+				<ul class="top-nav nav-right">
+					<li><a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Login</a>
+					</li>
+					<li><a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Signup</a>
+					</li>
+					<li class="dropdown"> 
+						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-animations="fadeInUp">
+							<img class="img-circle resize" alt="" src="images/authors/13.jpg">
+							<span class="hidden-xs small-padding">
+								<span>Umair</span>
+							 <i class="fa fa-caret-down"></i>
+							</span>
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a href="profile.html"><i class=" icon-bargraph"></i> Dashboard</a></li>
+							<li><a href="profile-setting.html"><i class=" icon-gears"></i> Profile Setting</a></li>
+							<li><a href="question-list.html"><i class="icon-heart"></i> Questions</a></li>
+							<li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+						</ul>
+					 </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="navbar navbar-default">
+		<div class="container">
+			<!-- header -->
+			<div class="navbar-header">
+				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">	<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- logo -->
+				<a href="index.html" class="navbar-brand">
+					<img class="img-responsive" alt="" src="images/logo.png">
+				</a>
+				<!-- header end -->
+			</div>
+			<!-- navigation menu -->
+			<div class="navbar-collapse collapse">
+				<!-- right bar -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-sm"><a href="how-work.html">How  It Works</a>
+					</li>
+					<li><a href="listing.html">Browse Questions</a>
+					</li>
+					
+					<li>
+						<div class="btn-nav"><a href="post-question.html" class="btn btn-primary btn-small navbar-btn">Post Question</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- navigation menu end -->
+			<!--/.navbar-collapse -->
+		</div>
+	</div>
+
+<div class="full-section search-section">
+		<div class="search-area container">
+			<h3 class="search-title">Have a Question?</h3>
+			<p class="search-tag-line">If you have any question you can ask below or enter what you are looking for!</p>
+			<form autocomplete="off" method="get" class="search-form clearfix" id="search-form">
+				<input type="text" title="* Please enter a search term!" placeholder="Type your search terms here" class="search-term " autocomplete="off">
+				<input type="submit" value="Search" class="search-btn">
+			</form>
+		</div>
+	</div>
+
+
+	<div class="main-content-area">
+		<!-- =-=-=-=-=-=-= Latest Questions  =-=-=-=-=-=-= -->
+		<section class="white question-tabs padding-bottom-80" id="latest-post">
+			<div class="container">
+				<div class="row">
+					<!-- Content Area Bar -->
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<!-- Tabs -->
+								<ul class="nav panel-tabs">
+									<li> <a data-toggle="tab" href="#tab1"><i class="icofont icon-ribbon"></i><span class="hidden-xs">Recent Questions</span></a> 
+									</li>
+									<li> <a data-toggle="tab" href="#tab2"><i class="icofont icon-layers"></i><span class="hidden-xs">Popular Responses</span></a> 
+									</li>
+									<li class="active"> <a data-toggle="tab" href="#tab3"><i class="icofont icon-global"></i><span class="hidden-xs">Recently Answered</span></a> 
+									</li>
+									<li> <a data-toggle="tab" href="#tab4"><i class="icofont icon-linegraph"></i><span class="hidden-xs">No answers</span></a> 
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="tab-content">
+								<div id="tab1" class="tab-pane active">
+									<!-- Question Listing -->
+									<div class="listing-grid">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-12 hidden-xs">
+												<a data-toggle="tooltip" data-placement="bottom" data-original-title="Martina Jaz" href="#">
+													<img alt="" class="img-responsive center-block" src="images/authors/1.jpg">
+												</a>
+											</div>
+											<div class="col-md-7 col-sm-8  col-xs-12">
+												<h3><a  href="#"> Php recursive function not working right</a></h3>
+												<div class="listing-meta"> <span><i class="fa fa-clock-o" aria-hidden="true"></i>8 mintes ago</span>  <span><i class="fa fa fa-eye" aria-hidden="true"></i> 750 Views</span> 
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-2 col-xs-12">
+												<ul class="question-statistic">
+													<li class="active"> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Answers"><span>2</span></a> 
+													</li>
+													<li> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Votes"><span>0</span></a> 
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-10 col-sm-10  col-xs-12">
+												<p>qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwerty qwertykeypad</p>
+												<div class="pull-right tagcloud"> <a href="#">Php</a>  <a href="#">recursive</a>  <a href="#">error</a> 
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Question Listing End -->
+									
+								</div>
+								<div id="tab2" class="tab-pane">
+									<!-- Question Listing -->
+									<div class="listing-grid">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-12 hidden-xs">
+												<a data-toggle="tooltip" data-placement="bottom" data-original-title="Martina Jaz" href="#">
+													<img alt="" class="correct img-responsive center-block" src="images/authors/5.jpg">
+												</a> <span class="tick2"> <i class="fa fa-check" aria-hidden="true"></i> </span> 
+											</div>
+											<div class="col-md-7 col-sm-8  col-xs-12">
+												<h3><a  href="#"> Php recursive function not working right</a></h3>
+												<div class="listing-meta"> <span><i class="fa fa-clock-o" aria-hidden="true"></i>8 mintes ago</span>  <span><i class="fa fa fa-eye" aria-hidden="true"></i> 750 Views</span>  <span><i class="fa fa-comment" aria-hidden="true"></i>50 Comment</span> 
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-2 col-xs-12">
+												<ul class="question-statistic">
+													<li class="active"> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Answers"><span>2</span></a> 
+													</li>
+													<li> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Votes"><span>0</span></a> 
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-10 col-sm-10  col-xs-12">
+												<p>qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwerty qwertykeypad</p>
+												<div class="pull-right tagcloud"> <a href="#">Php</a>  <a href="#">recursive</a>  <a href="#">error</a> 
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Question Listing End -->
+									
+								</div>
+								<div id="tab3" class="tab-pane">
+									<!-- Question Listing -->
+									<div class="listing-grid">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-12 hidden-xs">
+												<a data-toggle="tooltip" data-placement="bottom" data-original-title="Martina Jaz" href="#">
+													<img alt="" class="correct img-responsive center-block" src="images/authors/9.jpg">
+												</a> <span class="tick2"> <i class="fa fa-check" aria-hidden="true"></i> </span> 
+											</div>
+											<div class="col-md-7 col-sm-8  col-xs-12">
+												<h3><a  href="#"> Php recursive function not working right</a></h3>
+												<div class="listing-meta"> <span><i class="fa fa-clock-o" aria-hidden="true"></i>8 mintes ago</span>  <span><i class="fa fa fa-eye" aria-hidden="true"></i> 750 Views</span> 
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-2 col-xs-12">
+												<ul class="question-statistic">
+													<li class="active"> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Answers"><span>2</span></a> 
+													</li>
+													<li> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Votes"><span>0</span></a> 
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-10 col-sm-10  col-xs-12">
+												<p>qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwerty qwertykeypad</p>
+												<div class="pull-right tagcloud"> <a href="#">Php</a>  <a href="#">recursive</a>  <a href="#">error</a> 
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Question Listing End -->
+									
+								</div>
+								<div id="tab4" class="tab-pane">
+									<!-- Question Listing -->
+									<div class="listing-grid">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-12 hidden-xs">
+												<a data-toggle="tooltip" data-placement="bottom" data-original-title="Martina Jaz" href="#">
+													<img alt="" class=" img-responsive center-block" src="images/authors/5.jpg">
+												</a>
+											</div>
+											<div class="col-md-7 col-sm-8  col-xs-12">
+												<h3><a  href="#"> Php recursive function not working right</a></h3>
+												<div class="listing-meta"> <span><i class="fa fa-clock-o" aria-hidden="true"></i>8 mintes ago</span>  <span><i class="fa fa fa-eye" aria-hidden="true"></i> 750 Views</span>  <span><i class="fa fa-comment" aria-hidden="true"></i>50 Comment</span> 
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-2 col-xs-12">
+												<ul class="question-statistic">
+													<li class="active"> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Answers"><span>2</span></a> 
+													</li>
+													<li> <a data-toggle="tooltip" data-placement="bottom" data-original-title="Votes"><span>0</span></a> 
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-10 col-sm-10  col-xs-12">
+												<p>qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwertykeypad qwerty qwertykeypad</p>
+												<div class="pull-right tagcloud"> <a href="#">Php</a>  <a href="#">recursive</a>  <a href="#">error</a> 
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Question Listing End -->
+									
+								</div>
+								<!-- Pagination View More -->
+								<div class="text-center clearfix">
+									<button class="btn btn-primary btn-lg">View All Question</button>
+								</div>
+								<!-- Pagination View More End -->
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- end container -->
+		</section>
+
+		<section id="blog" class="custom-padding">
+			<div class="container">
+				<!-- title-section -->
+				<div class="main-heading text-center">
+					<h2>Latest Articles</h2>
+					<div class="slices"><span class="slice"></span><span class="slice"></span><span class="slice"></span>
+					</div>
+					<p>Cras varius purus in tempus porttitor ut dapibus efficitur sagittis cras vitae lacus metus nunc vulputate facilisis nisi
+						<br>eu lobortis erat consequat ut. Aliquam et justo ante. Nam a cursus velit</p>
+				</div>
+				<!-- End title-section -->
+				<!-- Row -->
+				<div class="row">
+					<!-- Blog Grid -->
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="blog-grid">
+							<div class="blog-image">
+								<img alt="blog-image1" class="img-responsive" src="images/blog/1.jpg">
+							</div>
+							<div class="blog-content">
+								<h5><a href="blog-detail.html">How to prevent my website from being scrolled horizontally?</a></h5>
+								<ul class="post-meta">
+									<li>By Admin</li>
+									<li>Php</li>
+									<li>27 July 2016</li>
+								</ul>
+								<p>We can make table scrollable by adding table-responsive class to it, but how can we loop it so that once the loop ends..</p>
+							</div>
+							<div class="blog-footer">
+								<ul class="like-comment">
+									<li><a href="#"><i class="icon-heart"></i>23</a>
+									</li>
+									<li><a href="#"><i class="icon-chat"></i>32</a>
+									</li>
+								</ul> <a href="#" class="more-btn pull-right"><i class="fa fa-long-arrow-right"></i> MORE</a> 
+							</div>
+						</div>
+					</div>
+					<!-- Blog Grid -->
+					<!-- Blog Grid -->
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="blog-grid">
+							<div class="blog-image">
+								<img alt="blog-image1" class="img-responsive" src="images/blog/2.jpg">
+							</div>
+							<div class="blog-content">
+								<h5><a href="blog-detail.html">What's the best way to implement a 2D interval search in C++?</a></h5>
+								<ul class="post-meta">
+									<li>By Admin</li>
+									<li>Php</li>
+									<li>27 July 2016</li>
+								</ul>
+								<p>We can make table scrollable by adding table-responsive class to it, but how can we loop it so that once the loop ends..</p>
+							</div>
+							<div class="blog-footer">
+								<ul class="like-comment">
+									<li><a href="#"><i class="icon-heart"></i>23</a>
+									</li>
+									<li><a href="#"><i class="icon-chat"></i>32</a>
+									</li>
+								</ul> <a href="#" class="more-btn pull-right"><i class="fa fa-long-arrow-right"></i> MORE</a> 
+							</div>
+						</div>
+					</div>
+					<!-- Blog Grid -->
+					<!-- Blog Grid -->
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="blog-grid">
+							<div class="blog-image">
+								<img alt="blog-image1" class="img-responsive" src="images/blog/3.jpg">
+							</div>
+							<div class="blog-content">
+								<h5><a href="blog-detail.html"> Access a list within an element of a Pandas DataFrame </a></h5>
+								<ul class="post-meta">
+									<li>By Admin</li>
+									<li>Php</li>
+									<li>27 July 2016</li>
+								</ul>
+								<p>We can make table scrollable by adding table-responsive class to it, but how can we loop it so that once the loop ends..</p>
+							</div>
+							<div class="blog-footer">
+								<ul class="like-comment">
+									<li><a href="#"><i class="icon-heart"></i>23</a>
+									</li>
+									<li><a href="#"><i class="icon-chat"></i>32</a>
+									</li>
+								</ul> <a href="#" class="more-btn pull-right"><i class="fa fa-long-arrow-right"></i> MORE</a> 
+							</div>
+						</div>
+					</div>
+					<!-- Blog Grid -->
+					<div class="clearfix"></div>
+					<div class="text-center clearfix section-padding-40"> <a href="javascript:void(0)" class="btn btn-lg btn-primary">View all Blog Post</a> 
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- Row End -->
+			</div>
+			<!-- end container -->
+		</section>
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core Css  -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Jquery Smooth Scroll  -->
+	<script src="js/jquery.smoothscroll.js"></script>
+	<!-- Jquery Easing -->
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- Jquery Counter -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Jquery Waypoints -->
+	<script src="js/jquery.waypoints.js"></script>
+	<!-- Jquery Appear Plugin -->
+	<script src="js/jquery.appear.min.js"></script>
+	<!-- Carousel Slider  -->
+	<script src="js/carousel.min.js"></script>
+	<!-- Jquery Parallex -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!--Style Switcher -->
+	<script src="js/bootstrap-dropdownhover.min.js"></script>
+	<!-- Include jQuery Syntax Highlighter -->
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+	<!-- Template Core JS -->
+	<script src="js/custom.js"></script>
+</body>
+
+
+</html>
